@@ -59,15 +59,15 @@
 
     <Button
         android:id="@+id/btnCloseMC"
-        android:layout_width="151dp"
-        android:layout_height="43dp"
+        android:layout_width="207dp"
+        android:layout_height="50dp"
         android:background="@drawable/btn_orange"
         android:text="Cerrar Sesión"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnVerCitasMC"
-        app:layout_constraintVertical_bias="0.434" />
+        app:layout_constraintVertical_bias="0.591" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
