@@ -6,4 +6,76 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_launcher_background"
     android:backgroundTint="#040A3C"
-    tools:context=".LogIn" />
+    tools:context=".LogIn" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="381dp"
+        android:layout_height="252dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/skybanklogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="363dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/txt_blanco"
+        android:inputType="number"
+        android:paddingStart="15dp"
+        android:hint="DUI"
+        android:textColorHint="@color/hint"
+        android:drawableStart="@drawable/dui"
+        android:drawablePadding="10dp"
+        android:elevation="10dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="363dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/txt_blanco"
+        android:drawableStart="@drawable/cerrar"
+        android:drawablePadding="10dp"
+        android:elevation="10dp"
+        android:ems="10"
+        android:hint="PIN de Seguridad"
+        android:inputType="number"
+        android:paddingStart="15dp"
+        android:textColorHint="@color/hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="338dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/btn_orange"
+        android:backgroundTint="@android:color/transparent"
+        android:backgroundTintMode="add"
+        android:drawableTint="@android:color/transparent"
+        android:drawableTintMode="multiply"
+        android:shadowColor="@color/black"
+        android:text="INICIAR SESION"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="18dp"
+        app:iconTint="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:rippleColor="@color/black" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
