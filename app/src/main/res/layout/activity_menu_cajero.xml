@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    android:backgroundTint="@color/DarkBlue"
+    tools:context=".MenuCajero">
+
+    <ImageView
+        android:id="@+id/LogoM"
+        android:layout_width="293dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imgf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/skybanklogo" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgf"
+        android:layout_width="183dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="232dp"
+        android:src="@drawable/foto"
+        app:civ_border_color="#00000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNameMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Daniela Ramirez"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgf" />
+
+    <Button
+        android:id="@+id/btnVerCitasMC"
+        android:layout_width="287dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/btn_orange"
+        android:text="Ver Citas Recibidas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameMC" />
+
+    <Button
+        android:id="@+id/btnCloseMC"
+        android:layout_width="151dp"
+        android:layout_height="43dp"
+        android:background="@drawable/btn_orange"
+        android:text="Cerrar Sesión"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerCitasMC"
+        app:layout_constraintVertical_bias="0.434" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

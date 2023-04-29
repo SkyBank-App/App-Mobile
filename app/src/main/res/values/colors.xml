@@ -10,4 +10,5 @@
     <color name="DarkBlue">#040A3C</color>
     <color name="hint">#B2B2B2</color>
     <color name="orange">#FE5D03</color>
+    <color name="transparent">#000000</color>
 </resources>
