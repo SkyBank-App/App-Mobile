@@ -8,7 +8,7 @@ import java.sql.SQLException
 
 class ConnectSql {
     //Variables para la cadena de conexión
-    private val ip="IP:60078"
+    private val ip="192.168.1.24:"
     private val db="SkyBank"
     private val username="user"
     private val password="pass"

@@ -4,8 +4,10 @@ import android.content.Intent
 import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.service.autofill.FillEventHistory
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 
 lateinit var edtDUIL: EditText
 lateinit var edtPINL:EditText
@@ -21,16 +23,20 @@ class LogIn : AppCompatActivity() {
         edtPINL = findViewById(R.id.edtPinL)
         btnLogL = findViewById(R.id.btnloginL)
         btnRegisL = findViewById(R.id.btnRegistrarseL)
+
         btnLogL.setOnClickListener {
-            if (edtDUIL.text.isEmpty()) {
-                edtDUIL.error = "Ingrese su numero de DUI"
-            }
-            else if (edtPINL.text.isEmpty()){
-                edtPINL.error = "Ingrese su PIN"
-            } else {
-                val open: Intent = Intent(this, MenuCajero::class.java)
+
+            val cajitaDui = edtDUIL.toString()
+            val cajitaPin = edtPINL.toString()
+
+            if (cajitaDui == "1234" && cajitaPin == "191919"){
+                val open: Intent= Intent(this,MenuCajero::class.java )
                 startActivity(open)
             }
+            else{
+                Toast.makeText(applicationContext, "Datos incorrectos", Toast.LENGTH_SHORT).show()
+            }
+
         }
         btnRegisL.setOnClickListener {
             val open: Intent = Intent(this, Registrarse::class.java)

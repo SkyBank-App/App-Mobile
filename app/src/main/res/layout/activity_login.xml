@@ -30,16 +30,16 @@
         android:drawablePadding="10dp"
         android:elevation="10dp"
         android:ems="10"
-        android:paddingStart="15dp"
         android:hint="DUI"
-        android:textColorHint="@color/hint"
         android:inputType="number"
+        android:paddingStart="15dp"
         android:textColor="@color/black"
+        android:textColorHint="@color/hint"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LogoL"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintVertical_bias="0.041" />
 
     <EditText
         android:id="@+id/edtPinL"
@@ -85,21 +85,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtPinL"
         app:layout_constraintVertical_bias="0.2"
-        app:rippleColor="@color/black" />
+        app:rippleColor="@color/black"
+        />
 
     <Button
         android:id="@+id/btnRegistrarseL"
-        android:layout_width="140dp"
-        android:layout_height="47dp"
+        android:layout_width="192dp"
+        android:layout_height="64dp"
         android:background="@drawable/ic_launcher_background"
         android:backgroundTint="@color/DarkBlue"
-        android:text="Registrarse"
-        android:textSize="13dp"
+        android:text="REGISTRARSE"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnloginL"
-        app:layout_constraintVertical_bias="0.214" />
+        app:layout_constraintVertical_bias="0.7"
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
