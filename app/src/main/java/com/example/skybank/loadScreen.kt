@@ -13,7 +13,7 @@ class loadScreen : AppCompatActivity() {
         setContentView(R.layout.activity_load_screen)
 
         handler.postDelayed({
-            val intent: Intent = Intent(this, loadScreen::class.java)
+            val intent: Intent = Intent(this, LogIn::class.java)
             startActivity(intent)
         }, tiempo.toLong())
     }
