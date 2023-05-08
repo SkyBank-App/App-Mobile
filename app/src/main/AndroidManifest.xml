@@ -15,6 +15,12 @@
             android:name=".EJEMPLO"
             android:exported="false" />
         <activity
+            android:name=".CuentadeAhorro"
+            android:exported="false" />
+        <activity
+            android:name=".CitasSolicitadas"
+            android:exported="false" />
+        <activity
             android:name=".AgendarCitas"
             android:exported="false" />
         <activity

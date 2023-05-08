@@ -9,6 +9,18 @@
     tools:context=".Registrarse">
 
     <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="46dp"
+        android:layout_height="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        app:srcCompat="@drawable/flechaderegreso" />
+
+    <ImageView
         android:id="@+id/imageView"
         android:layout_width="310dp"
         android:layout_height="203dp"

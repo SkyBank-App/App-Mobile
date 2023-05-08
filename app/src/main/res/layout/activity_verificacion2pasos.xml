@@ -7,6 +7,18 @@
     android:background="@color/DarkBlue"
     tools:context=".verificacion2pasos">
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="46dp"
+        android:layout_height="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        app:srcCompat="@drawable/flechaderegreso" />
+
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="343dp"
