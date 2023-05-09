@@ -61,6 +61,7 @@
         android:layout_width="363dp"
         android:layout_height="65dp"
         android:background="@drawable/txt_blanco"
+        android:drawableStart="@drawable/mailicon"
         android:drawablePadding="10dp"
         android:elevation="10dp"
         android:ems="10"
