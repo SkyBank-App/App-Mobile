@@ -140,17 +140,18 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="343dp"
-        android:layout_height="39dp"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
         android:layout_marginTop="12dp"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="#B5FFFFFF"
         android:text="Prestamos"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.838" />
+        app:layout_constraintVertical_bias="0.838"
+        />
 
     <TextView
         android:id="@+id/textView15"
@@ -167,10 +168,10 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="343dp"
-        android:layout_height="39dp"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
         android:layout_marginTop="12dp"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="#B5FFFFFF"
         android:text="Cuenta de ahorro"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
