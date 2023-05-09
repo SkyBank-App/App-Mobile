@@ -27,8 +27,8 @@ class LogIn : AppCompatActivity() {
 
         btnLogL.setOnClickListener {
 
-            val cajitaDui = edtDUIL.toString()
-            val cajitaPin = edtPINL.toString()
+            val cajitaDui = edtDUIL.text.toString()
+            val cajitaPin = edtPINL.text.toString()
 
             if (cajitaDui == "1234" && cajitaPin == "191919"){
                 val open: Intent= Intent(this,MenuCajero::class.java )
