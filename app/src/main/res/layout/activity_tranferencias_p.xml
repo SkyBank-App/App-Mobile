@@ -8,6 +8,18 @@
     android:background="@drawable/ic_launcher_background"
     android:backgroundTint="@color/DarkBlue">
 
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="46dp"
+        android:layout_height="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        app:srcCompat="@drawable/flechaderegreso" />
+
     <Button
         android:id="@+id/btnloginL5"
         android:layout_width="160dp"
