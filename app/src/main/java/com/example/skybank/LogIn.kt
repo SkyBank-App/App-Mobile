@@ -9,6 +9,8 @@ import android.service.autofill.FillEventHistory
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.fragment.app.Fragment
+import com.example.skybank.ui.home.HomeFragment
 
 lateinit var edtDUIL: EditText
 lateinit var edtPINL:EditText
@@ -29,10 +31,16 @@ class LogIn : AppCompatActivity() {
 
             val cajitaDui = edtDUIL.text.toString()
             val cajitaPin = edtPINL.text.toString()
+            val fragment = HomeFragment()
 
             if (cajitaDui == "1234" && cajitaPin == "191919"){
-                val open: Intent= Intent(this,MenuCajero::class.java )
-                startActivity(open)
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.idFragUser, Fragment())
+                    .addToBackStack(null)
+                    .commit()
+
+                //val open: Intent= Intent(this,MenuCajero::class.java )
+                //startActivity(open)
             }
             else{
                 Toast.makeText(applicationContext, "Datos incorrectos", Toast.LENGTH_SHORT).show()
@@ -47,4 +55,6 @@ class LogIn : AppCompatActivity() {
 
 
     }
+
+
 }
