@@ -31,16 +31,17 @@ class LogIn : AppCompatActivity() {
 
             val cajitaDui = edtDUIL.text.toString()
             val cajitaPin = edtPINL.text.toString()
-            val fragment = HomeFragment()
+            val fragment = ()
 
             if (cajitaDui == "1234" && cajitaPin == "191919"){
                 supportFragmentManager.beginTransaction()
-                    .replace(R.id.idFragUser, Fragment())
+                    .replace(R.id.idFragUser, fragment)
                     .addToBackStack(null)
                     .commit()
-
-                //val open: Intent= Intent(this,MenuCajero::class.java )
-                //startActivity(open)
+            }
+            else if(cajitaDui == "123" && cajitaPin == "1919"){
+                val open: android.content.Intent = android.content.Intent(this, com.example.skybank.MenuCajero::class.java)
+                startActivity(open)
             }
             else{
                 Toast.makeText(applicationContext, "Datos incorrectos", Toast.LENGTH_SHORT).show()
